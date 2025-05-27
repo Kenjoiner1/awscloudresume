@@ -1,0 +1,20 @@
+## 🔐 DNSSEC Implementation for Secure DNS
+
+As part of enhancing the security of my Cloud Resume Challenge project, I implemented **DNSSEC (Domain Name System Security Extensions)** on my domain hosted in **Amazon Route 53**.
+
+### ✅ What Was Done
+
+- **Created a customer-managed asymmetric KMS key (RSA_2048)** to sign DNS records.
+- **Configured the KMS key policy** to grant Route 53 the required permissions: `kms:DescribeKey`, `kms:GetPublicKey`, and `kms:Sign`.
+- **Created a Key Signing Key (KSK)** in Route 53 using the managed KMS key.
+- Linked the KSK to the hosted zone to enable DNSSEC signing.
+
+### 🔍 Why It Matters
+
+- Prevents **DNS spoofing** and **man-in-the-middle (MITM) attacks**.
+- Ensures DNS responses are authentic and untampered.
+- Demonstrates practical **cloud security and infrastructure-as-code (IaC)** skills using AWS services.
+
+> Note: DNSSEC KMS keys must be asymmetric and do not support automatic key rotation. Manual rotation is a best practice.
+
+This step reflects a deeper commitment to **secure-by-design cloud architecture** and aligns with industry best practices for production-grade systems.
