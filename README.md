@@ -88,7 +88,8 @@ This project is part of the [Cloud Resume Challenge](https://cloudresumechalleng
 ---
 
 ## 📸 Screenshot
-![visitcounter](https://github.com/user-attachments/assets/bd8b9b92-6801-47b0-aaa2-62774ca90c41)
+- javascript code to fetch your API![visitcounter](https://github.com/user-attachments/assets/06bc923b-d3a6-4ad2-aadb-8c7ec9503413)
+
 
 ---
 
